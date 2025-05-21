@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.audioplayer.controller.MainController">
+<VBox spacing="10" alignment="CENTER">
+<Label text="Аудиопроигрыватель" />
+<Button text="Загрузить трек" onAction="#onLoadTrack"/>
+<Button text="Играть" onAction="#onPlay"/>
+<Button text="Пауза" onAction="#onPause"/>
+<Button text="Остановить" onAction="#onStop"/>
+<TextField fx:id="trackNameField" promptText="Название трека"/>
+<Button text="История" onAction="#onShowHistory"/>
+</VBox>
+        </AnchorPane>
